@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         // Make the app drawing area fullscreen (draw behind status and nav bars)
         WindowCompat.setDecorFitsSystemWindows(window, false)
+
         setContent {
             val navController: NavHostController = rememberNavController()
 
