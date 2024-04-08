@@ -87,6 +87,7 @@ dependencies {
     implementation(libs.timber)
     implementation(libs.document.scanner)
     implementation(libs.hilt.android)
+    implementation(libs.play.services.auth)
     ksp(libs.dagger.compiler)
     ksp(libs.hilt.compiler)
     implementation(libs.coil.compose)
