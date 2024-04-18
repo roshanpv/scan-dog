@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import com.scandog.ui.Routes
 import com.scandog.ui.screens.onboardingauth.OnboardingScreen
 import com.scandog.ui.screens.onboardingauth.OnboardingViewModel
+import com.scandog.ui.screens.splash.SplashScreen
 
 @Composable
 fun MainNavigation(
@@ -32,6 +33,10 @@ fun MainNavigation(
                 onboardingViewModel = onboardingViewModel,
                 navController = navController
             )
+        }
+
+        composable(Routes.splashScreen) {
+            SplashScreen(navController = navController)
         }
 
     }
